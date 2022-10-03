@@ -1,0 +1,162 @@
+/* What are media queries? */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+
+/* Common Device Resolutions and Breakpoints */
+:root {
+ --xs-res: 375px;
+ --sm-res: 640px;
+ --md-res: 768px;
+ --lg-res: 1024px;
+ --xl-res: 1280px;
+ --2xl-res: 1536px;
+
+ --gray-0: #f8f9fa;
+ --gray-100: #f1f3f5;
+ --gray-600: #868e96;
+ --gray-700: #495057;
+ --gray-800: #343a40;
+ --gray-900: #212529;
+
+ --blue-800: #1971c2;
+
+ --font-sm: 0.85rem;
+ --font-lg: 1.25rem;
+
+ font-family: 'Poppins', sans-serif;
+}
+
+.container {
+ margin: 0 auto;
+ max-width: var(--lg-res);
+ min-height: 100vh;
+}
+
+.heading {
+ font-size: 2rem;
+ margin: 2rem 0 2rem 0;
+}
+
+.card-container {
+ display: grid;
+ gap: 2rem;
+ grid-template-columns: repeat(2, 1fr);
+ align-items: baseline;
+}
+
+.card {
+ display: flex;
+ border: 1px solid #e2e2e2;
+ border-radius: 8px;
+}
+
+.card-details {
+ padding: 1rem;
+}
+
+.card-image {
+ width: 200px;
+ height: auto;
+ object-fit: cover;
+ border-top-left-radius: 8px;
+ border-bottom-left-radius: 8px;
+}
+
+.card-details-header-container {
+ margin-bottom: 1rem;
+}
+
+.card-header-info {
+ text-transform: uppercase;
+ font-size: var(--font-sm);
+ font-weight: 300;
+ color: var(--gray-600);
+ margin-bottom: 4px;
+}
+
+.card-header-price {
+ color: var(--gray-900);
+ font-size: var(--font-lg);
+ font-weight: 500;
+ margin-bottom: 0.25rem;
+}
+
+.card-header-address {
+ font-size: var(--font-sm);
+ color: var(--gray-700);
+}
+
+.house-details-container {
+ display: flex;
+ margin-bottom: 1rem;
+}
+
+.house-details-container > div:nth-child(1) {
+ margin-right: 1rem;
+}
+
+.house-details {
+ display: flex;
+ align-items: center;
+}
+
+.house-details > img {
+ margin-right: 0.5rem;
+}
+
+.house-details p {
+ color: var(--gray-600);
+ font-size: var(--font-sm);
+}
+
+.house-details-number {
+ font-weight: 500;
+ color: var(--gray-800);
+ margin-right: 2px;
+}
+
+.house-details img {
+ width: 20px;
+}
+
+.agent-container {
+ display: flex;
+ align-items: center;
+ background-color: #f8f9fa;
+ border-radius: 8px;
+ padding: 0.5rem;
+ margin-bottom: 1rem;
+}
+
+.agent-container img {
+ width: 30px;
+ margin-right: 0.5rem;
+}
+
+.agent-name {
+ font-size: var(--font-sm);
+ color: var(--gray-900);
+ margin-bottom: 0.25rem;
+}
+
+.agent-phone-number {
+ font-size: var(--font-sm);
+ color: var(--gray-600);
+
+}
+
+.card-button {
+ display: flex;
+ align-items: center;
+ background-color: var(--blue-800);
+ border-radius: 8px;
+ font-size: var(--font-sm);
+ margin-left: auto;
+ color: var(--gray-100);
+ padding: 0.25rem 0.825rem;
+ outline: none;
+ border: none;
+}
+
+.card-button img {
+ width: 24px;
+}
